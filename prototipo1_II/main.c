@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void sumarNumeros(int, int);
+int sumarNumeros(int, int);
 
 int main()
 {
     int numero1;
     int numero2;
+    int resultado;
 
     printf("Ingrese un numero: ");
     scanf("%d", &numero1);
@@ -14,18 +15,18 @@ int main()
     printf("Ingrese un numero: ");
     scanf("%d", &numero2);
 
-    sumarNumeros(numero1, numero2);
+    resultado=sumarNumeros(numero1, numero2);
 
-    return 0;
+    printf("El resultado de la suma es: %d\n", resultado);
 }
 
-//desarrollo o implementación de la función
+//desarrollo o implementaciÃ³n de la funciÃ³n
 
-void sumarNumeros(int numero1, int numero2)
+int sumarNumeros(int numero1, int numero2)
 {
     int retorno;
 
     retorno = numero1 + numero2;
 
-    printf("La suma es: %d", retorno);
+    return retorno;
 }
